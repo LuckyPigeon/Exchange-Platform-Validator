@@ -1,24 +1,23 @@
 {
-    "name": "Exchange Platform Validator",
-    "description": "Validate the exchange platform you visit!",
-    "version": "1.0",
     "manifest_version": 3,
-    "permissions": ["storage"],
+    "name": "Exchange Validator",
+    "description": "Validate the cryptocurrency exchange plotform",
+    "version": "1.0",
     "background": {
         "service_worker": "background.js"
     },
     "action": {
-        "default_popup": "popup.html",
-        "default_title": "點擊查看網站是否通過驗證",
         "default_icon": {
-            "16": "/images/checked.png",
-            "32": "/images/checked32.png",
-            "128": "/images/checked128.png"
-        }
+            "16": "./images/checked16.png",
+            "32": "./images/checked32.png",
+            "128": "./images/checked128.png"
+        },
+        "default_popup": "popup.html"
     },
     "icons": {
-        "16": "/images/checked.png",
-        "32": "/images/checked32.png",
-        "128": "/images/checked128.png"
-    }
+        "16": "./images/checked16.png",
+        "32": "./images/checked32.png",
+        "128": "./images/checked128.png"
+    },
+    "permissions": ["tabs"]
 }
